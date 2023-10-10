@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header
       className="bg-white shadow-lg h-[90px] 
-    sticky flex flex-row justify-between items-center px-32">
+    fixed top-0 left-0 w-full flex flex-row justify-between items-center px-32">
       <div className="flex items-center">
         <div className="h-[60px] w-[60px]">
           <Image

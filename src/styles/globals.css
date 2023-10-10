@@ -10,3 +10,15 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+.bg-home {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
