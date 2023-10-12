@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { NavItem } from "./re-usable/NavItem";
 
 export const Header = () => {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -33,31 +34,11 @@ export const Header = () => {
           className={`${
             isNavActive ? "flex  transition-all duration-150" : "hidden"
           } lg:flex flex-col lg:flex-row justify-around w-full bg-slate-100 lg:bg-white`}>
-          <Link
-            href={"#home"}
-            className="text-lg font-medium px-4 py-4 lg:py-0 tracking-wide border-b-2 lg:border-none">
-            Home
-          </Link>
-          <Link
-            href={"#about"}
-            className="text-lg font-medium px-4 py-4 lg:py-0 tracking-wide border-b-2 lg:border-none">
-            About
-          </Link>
-          <Link
-            href={"#projects"}
-            className="text-lg font-medium px-4 py-4 lg:py-0 tracking-wide border-b-2 lg:border-none">
-            Projects
-          </Link>
-          <Link
-            href={"#blogs"}
-            className="text-lg font-medium px-4 py-4 lg:py-0 border-b-2 lg:border-none tracking-wide">
-            Blogs
-          </Link>
-          <Link
-            href={"#contact"}
-            className="text-xl font-medium px-4 py-4 lg:py-0 border-b-2 lg:border-none tracking-wide">
-            Contact
-          </Link>
+          <NavItem link={"#home"} title={"Home"} />
+          <NavItem link={"#about"} title={"About"} />
+          <NavItem link={"#projects"} title={"Projects"} />
+          <NavItem link={"#blogs"} title={"Blogs"} />
+          <NavItem link={"#contact"} title={"Contact"} />
         </ul>
       </div>
 
