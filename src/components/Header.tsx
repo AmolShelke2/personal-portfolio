@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavItem } from "./re-usable/NavItem";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const [isNavActive, setIsNavActive] = useState(false);
 
   return (

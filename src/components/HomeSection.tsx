@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const HomeSection = () => {
+export const HomeSection: React.FC = () => {
   return (
     <div className="h-screen mb-8 bg-home">
       <div className="max-w-[1440px] h-full flex flex-col justify-center items-center mx-auto px-4 lg:px-0">

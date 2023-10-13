@@ -1,3 +1,4 @@
+import { About } from "@/components/About";
 import { Header } from "@/components/Header";
 import { HomeSection } from "@/components/HomeSection";
 import Image from "next/image";
@@ -20,6 +21,7 @@ export default function Home() {
     <div className="h-full w-full bg-white">
       <Header />
       <HomeSection />
+      <About />
     </div>
   );
 }
