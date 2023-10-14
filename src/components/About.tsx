@@ -1,17 +1,24 @@
+import Link from "next/link";
 import { SpecificSkill } from "./re-usable/SpecificSkill";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 
 export const About: React.FC = () => {
   return (
-    <div className="max-w-[1440px] mx-auto h-[600px]" id="about">
+    <div className="w-full lg:max-w-[1440px] xl:mx-auto h-[780px]" id="about">
       <h2 className="text-center underline text-5xl font-extrabold capitalize my-5 text-gray-700">
         About me
       </h2>
-      <div className="flex flex-row justify-center mt-20">
-        <div className="w-1/2 px-6 py-5">
+      <div className="flex flex-col lg:flex-row justify-center mt-20">
+        <div className="w-full lg:w-1/2 px-6 py-5">
           <h3 className="text-black text-2xl font-medium mb-5 capitalize">
             A frontend developer
           </h3>
-          <p className="text-xl text-gray-600 leading-9">
+          <p className="text-xl text-gray-600 leading-9 mb-4">
             Hey There I&apos;m Amol Shelke a frontend developer based in India.
             With experience in working with technologies like HTML, CSS,
             JavaScript, Reactjs, nextjs and Tailwind CSS. With a focus of
@@ -19,14 +26,29 @@ export const About: React.FC = () => {
             building frontend and UI from past 1.5 years, In this period of time
             I did two tech internships and worked with some good companies, {""}
             <span>@skilzen</span> and <span>@codedamn</span>
-            <div>{/* social links */}</div>
           </p>
+          <div className="flex gap-4 py-4 border-b-2 mt-4 sm:border-none">
+            <Link
+              href="https://www.linkedin.com/in/amol-shelke-627813220/"
+              target="_blank">
+              <AiFillLinkedin size={28} />
+            </Link>
+            <Link href="https://twitter.com/amol_shelke09" target="_blank">
+              <AiFillTwitterSquare size={28} />
+            </Link>
+            <Link href="https://github.com/AmolShelke2" target="_blank">
+              <AiFillGithub size={28} />
+            </Link>
+            <Link href="mailto:shelkeamol897@gmail.com">
+              <AiFillMail size={28} />
+            </Link>
+          </div>
         </div>
-        <div className="w-1/2 px-6 py-5">
+        <div className="w-full lg:w-1/2 px-6 py-5">
           <h3 className="text-black text-2xl font-medium mb-5 capitalize">
             Skills
           </h3>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <SpecificSkill skill="HTML" />
             <SpecificSkill skill="CSS" />
             <SpecificSkill skill="JavaScript" />
@@ -36,6 +58,8 @@ export const About: React.FC = () => {
             <SpecificSkill skill="Tailwind CSS" />
             <SpecificSkill skill="Git" />
             <SpecificSkill skill="Github" />
+            <SpecificSkill skill="VS code" />
+            <SpecificSkill skill="Responsive web designs" />
           </div>
         </div>
       </div>
