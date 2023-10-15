@@ -20,14 +20,15 @@ export const About: React.FC = () => {
           <h3 className="text-black text-2xl font-medium mb-5 capitalize">
             A frontend developer
           </h3>
-          <p className="text-lg lg:text-xl text-gray-600 mb-4 w-full lg:w-[90%]">
+          <p className="text-lg lg:text-xl text-gray-600 mb-4 w-full lg:w-[90%] lg:leading-9">
             Hey There I&apos;m Amol Shelke a frontend developer based in India.
             With experience in working with technologies like HTML, CSS,
             JavaScript, Reactjs, nextjs and Tailwind CSS. With a focus of
             creating delightful user interfaces. <br />I have been learning and
             building frontend and UI from past 1.5 years, In this period of time
             I did two tech internships and worked with some good companies, {""}
-            <span>@skilzen</span> and <span>@codedamn</span>
+            <span className="text-black font-bold">@skilzen</span> and{" "}
+            <span className="text-black font-bold">@codedamn</span>
           </p>
           <div className="flex gap-4 py-4 border-b-2 mt-4 sm:border-none">
             <Link
