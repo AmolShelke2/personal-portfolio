@@ -34,13 +34,21 @@ export const Projects: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 py-4 my-4">
+        <div className="w-full lg:w-1/2 py-4 my-4 relative">
           <Image
             src={"/images/project-1.png"}
             height={600}
             width={600}
             alt="project-1"
             className="w-full h-full"
+          />
+
+          <Image
+            src={"/images/project-1-mobile.png"}
+            height={200}
+            width={100}
+            alt="project-1"
+            className="absolute bottom-0"
           />
         </div>
       </div>

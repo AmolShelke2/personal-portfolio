@@ -20,7 +20,7 @@ export const About: React.FC = () => {
           <h3 className="text-black text-2xl font-medium mb-5 capitalize">
             A frontend developer
           </h3>
-          <p className="text-xl text-gray-600 leading-9 mb-4">
+          <p className="text-lg lg:text-xl text-gray-600 mb-4 w-full lg:w-[90%]">
             Hey There I&apos;m Amol Shelke a frontend developer based in India.
             With experience in working with technologies like HTML, CSS,
             JavaScript, Reactjs, nextjs and Tailwind CSS. With a focus of
