@@ -1,6 +1,7 @@
 import { About } from "@/components/About";
 import { Header } from "@/components/Header";
 import { HomeSection } from "@/components/HomeSection";
+import { Projects } from "@/components/Projects";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Header />
       <HomeSection />
       <About />
+      <Projects />
     </div>
   );
 }

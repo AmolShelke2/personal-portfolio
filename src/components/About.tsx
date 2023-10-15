@@ -9,8 +9,10 @@ import {
 
 export const About: React.FC = () => {
   return (
-    <div className="w-full lg:max-w-[1440px] xl:mx-auto h-[780px]" id="about">
-      <h2 className="text-center underline text-5xl font-extrabold capitalize my-5 text-gray-700">
+    <div
+      className="w-full lg:max-w-[1440px] xl:mx-auto h-auto lg:h-[780px] shadow-md"
+      id="about">
+      <h2 className="text-center underline text-5xl font-extrabold capitalize my-5 py-4 text-gray-700">
         About me
       </h2>
       <div className="flex flex-col lg:flex-row justify-center mt-20">
