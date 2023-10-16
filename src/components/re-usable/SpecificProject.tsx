@@ -10,7 +10,7 @@ interface specificProject {
   projectDemo: string;
   projectDesktopPreview: string;
   projectMobilePreview: string;
-  flexFlow: string;
+  isReverse: boolean;
 }
 
 export const SpecificProject: React.FC<specificProject> = ({
@@ -20,12 +20,14 @@ export const SpecificProject: React.FC<specificProject> = ({
   projectDemo,
   projectDesktopPreview,
   projectMobilePreview,
-  flexFlow,
+  isReverse,
 }) => {
   return (
     <div>
       <div
-        className={`h-full lg:h-[650px] bg-[#f8fafc] flex flex-col-reverse ${flexFlow} justify-between gap-4 items-center py-4 my-4 shadow-md px-5`}>
+        className={`h-full lg:h-[650px] bg-[#f8fafc] flex flex-col-reverse ${
+          isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } justify-between gap-4 items-center py-4 my-4 shadow-md px-5`}>
         <div className="w-full lg:w-1/2">
           <h3 className="text-[32px] lg:text-[45px] font-bold my-2">
             {projectTitle}

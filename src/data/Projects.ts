@@ -8,7 +8,8 @@ export const projects = [
     projectDemo: "https://seamless-ai.verce.app",
     projectDesktopPreview: "/images/project-1.png",
     projectMobilePreview: "/images/project-1-mobile.png",
-    flexFlow: "lg:flex-row",
+    isReverse: false,
+    flexFlow: "flex-row",
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ export const projects = [
     projectDemo: "https://sneakerhead-tau.vercel.app/",
     projectDesktopPreview: "/images/project-2.png",
     projectMobilePreview: "/images/project-2-mobile.png",
-    flexFlow: "lg:flex-row-reverse",
+    isReverse: true,
   },
 
   {
@@ -31,7 +32,7 @@ export const projects = [
     projectDemo: "https://easy-buy-gamma.vercel.app/",
     projectDesktopPreview: "/images/project-3.png",
     projectMobilePreview: "/images/project-3-mobile.png",
-    flexFlow: "lg:flex-row",
+    isReverse: false,
   },
 
   {
@@ -43,6 +44,6 @@ export const projects = [
     projectDemo: "https://next-dashboard-puce.vercel.app/",
     projectDesktopPreview: "/images/project-6.png",
     projectMobilePreview: "/images/project-6-mobile.png",
-    flexFlow: "lg:flex-row-reverse",
+    isReverse: true,
   },
 ];

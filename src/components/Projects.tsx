@@ -19,7 +19,7 @@ export const Projects: React.FC = () => {
           projectDemo={project.projectDemo}
           projectDesktopPreview={project.projectDesktopPreview}
           projectMobilePreview={project.projectMobilePreview}
-          flexFlow={project.flexFlow}
+          isReverse={project.isReverse}
         />
       ))}
     </div>
