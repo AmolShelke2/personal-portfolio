@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   return (
     <header
       className="bg-white shadow-lg h-[80px] lg:h-[100px] fixed top-0 left-0 w-full flex flex-col
-     lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-0 lg:px-32">
+     lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-0 lg:px-32 z-50">
       <div className="flex items-center">
         <div className="h-[60px] w-[60px] mt-2 lg:mt-0">
           <Image
