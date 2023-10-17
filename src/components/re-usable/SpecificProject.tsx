@@ -36,7 +36,7 @@ export const SpecificProject: React.FC<specificProject> = ({
   return (
     <div>
       <div
-        className={`h-full lg:h-[650px] bg-[#f8fafc] flex flex-col-reverse ${
+        className={`h-full lg:h-[650px] bg-[#f8fafc] flex flex-col-reverse overflow-hidden ${
           isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
         } justify-between gap-4 items-center py-4 my-4 shadow-md px-5`}>
         <motion.div
