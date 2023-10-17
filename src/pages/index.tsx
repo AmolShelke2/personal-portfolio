@@ -16,7 +16,13 @@ export default function Home() {
 
   return isLoading ? (
     <div className="flex justify-center items-center h-screen">
-      <Image src={"/images/pre.svg"} height={150} width={150} alt="loading" />
+      <Image
+        src={"/images/share-icon.gif"}
+        height={150}
+        width={150}
+        className="rounded-full"
+        alt="loading"
+      />
     </div>
   ) : (
     <div className="h-full w-full bg-white">

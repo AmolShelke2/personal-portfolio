@@ -21,9 +21,7 @@ export const Header: React.FC = () => {
           />
         </div>
 
-        <h1
-          className="text-black text-xl lg:text-2xl mx-4 uppercase font-semibold 
-        tracking-wide">
+        <h1 className="text-black text-xl lg:text-2xl mx-4 capitalize font-semibold heading">
           Amol Shelke
         </h1>
       </div>
