@@ -1,25 +1,28 @@
-import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 export const HomeSection: React.FC = () => {
   return (
-    <div className="h-screen mb-8 bg-home" id="home">
-      <div className="max-w-[1440px] h-full flex flex-col justify-center items-center mx-auto px-4 lg:px-0">
-        <h2 className="text-black text-2xl p-2 lg:text-[56px] lg:p-8 font-extrabold uppercase tracking-wide mb-5 lg:w-3/4 text-center">
-          Hey there, I&apos;m Amol Shelke
-        </h2>
-        <p className="lg:w-2/4 text-lg w-full sm:w-[70%] lg:text-xl lg:leading-9 text-center mb-10">
-          A Frontend developer building user interfaces with Nextjs, Reactjs and
-          Tailwind CSS. Which leads the success of overall product.
-        </p>
+    <div className="h-screen my-12 bg-home" id="home">
+      <div
+        className="max-w-[1440px] h-full flex flex-col-reverse gap-8 lg:gap-6 sm:flex-row justify-center sm:justify-between 
+      items-center mx-auto px-4 lg:px-0">
+        <div className="w-full sm:w-1/2">
+          <h1 className="text-black p-2 text-3xl lg:text-[56px] lg:p-8 font-semibold uppercase mb-5 text-start lg:leading-[70px]">
+            Hey there, <br /> I&apos;m
+            <span className=" text-blue-500 font-bold"> Amol Shelke</span>
+          </h1>
+        </div>
 
-        <Link href={"#projects"}>
-          <button
-            className="bg-[#e13019] text-white px-24 text-xl tracking-wider font-bold
-            py-6 rounded-md">
-            Projects
-          </button>
-        </Link>
+        <div className="w-full sm:w-1/2">
+          <Image
+            src={"/images/hero-image.png"}
+            alt="hero-image"
+            height={500}
+            width={500}
+            className="w-full h-full"
+          />
+        </div>
       </div>
     </div>
   );
