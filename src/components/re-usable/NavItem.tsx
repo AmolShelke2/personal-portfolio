@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import { Link } from "react-scroll";
 
 interface navItemProps {
   link: string;
@@ -9,8 +9,8 @@ interface navItemProps {
 export const NavItem: React.FC<navItemProps> = ({ link, title }) => {
   return (
     <Link
-      href={link}
-      className="text-lg font-medium px-4 py-4 lg:py-0 tracking-wide border-b-2 lg:border-none">
+      to={link}
+      className="text-lg cursor-pointer font-medium px-4 py-4 lg:py-0 tracking-wide border-b-2 lg:border-none">
       {title}
     </Link>
   );

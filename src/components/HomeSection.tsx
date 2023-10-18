@@ -3,7 +3,7 @@ import React from "react";
 
 export const HomeSection: React.FC = () => {
   return (
-    <div className="h-screen my-12 bg-home" id="home">
+    <div className="h-screen my-12 bg-home" name="home">
       <div
         className="max-w-[1440px] h-full flex flex-col-reverse gap-8 lg:gap-6 sm:flex-row justify-center sm:justify-between 
       items-center mx-auto px-4 lg:px-0">
