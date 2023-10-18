@@ -6,7 +6,7 @@ export const Blogs: React.FC = () => {
   return (
     <div
       className="w-full lg:max-w-[1440px] xl:mx-auto h-auto mt-12"
-      name="blogs">
+      id="blogs">
       <h2 className="text-center underline text-3xl lg:text-5xl font-extrabold capitalize my-5 text-gray-700 py-4">
         Blogs
       </h2>
