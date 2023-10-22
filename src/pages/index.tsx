@@ -1,5 +1,6 @@
 import { About } from "@/components/About";
 import { Blogs } from "@/components/Blogs";
+import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
 import { HomeSection } from "@/components/HomeSection";
 import { Projects } from "@/components/Projects";
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <Projects />
       <Blogs />
+      <Contact />
     </div>
   );
 }
