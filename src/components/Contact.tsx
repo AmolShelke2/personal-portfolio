@@ -10,7 +10,7 @@ import {
 export const Contact: React.FC = () => {
   return (
     <div
-      className="w-full lg:max-w-[1440px] xl:mx-auto h-auto mt-12 lg:h-[600px] flex flex-col items-center shadow-lg"
+      className="w-full lg:max-w-[1440px] xl:mx-auto h-auto mt-12 lg:h-[600px] flex flex-col items-center"
       id="contact">
       <h2 className="text-center underline text-3xl lg:text-5xl font-extrabold capitalize my-5 text-gray-700 py-4">
         Contact me
