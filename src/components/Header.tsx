@@ -31,11 +31,36 @@ export const Header: React.FC = () => {
           className={`${
             isNavActive ? "flex  transition-all duration-150" : "hidden"
           } lg:flex flex-col lg:flex-row justify-around w-full bg-slate-100 lg:bg-white`}>
-          <NavItem link={"home"} title={"Home"} />
-          <NavItem link={"about"} title={"About"} />
-          <NavItem link={"projects"} title={"Projects"} />
-          <NavItem link={"blogs"} title={"Blogs"} />
-          <NavItem link={"contact"} title={"Contact"} />
+          <NavItem
+            link={"home"}
+            title={"Home"}
+            handleNav={setIsNavActive}
+            isActive={isNavActive}
+          />
+          <NavItem
+            link={"about"}
+            title={"About"}
+            handleNav={setIsNavActive}
+            isActive={isNavActive}
+          />
+          <NavItem
+            link={"projects"}
+            title={"Projects"}
+            handleNav={setIsNavActive}
+            isActive={isNavActive}
+          />
+          <NavItem
+            link={"blogs"}
+            title={"Blogs"}
+            handleNav={setIsNavActive}
+            isActive={isNavActive}
+          />
+          <NavItem
+            link={"contact"}
+            title={"Contact"}
+            handleNav={setIsNavActive}
+            isActive={isNavActive}
+          />
         </ul>
       </div>
 
