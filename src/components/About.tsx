@@ -12,10 +12,10 @@ export const About: React.FC = () => {
     <div
       className="w-full lg:max-w-[1440px] xl:mx-auto h-auto lg:h-[780px] shadow-md"
       id="about">
-      <h2 className="text-center underline text-5xl font-extrabold capitalize my-5 py-4 text-gray-700">
+      <h2 className="text-center underline text-5xl font-extrabold capitalize sm:my-5 py-4 text-gray-700">
         About me
       </h2>
-      <div className="flex flex-col lg:flex-row justify-center mt-20">
+      <div className="flex flex-col lg:flex-row justify-center mt-5 sm:mt-20">
         <div className="w-full lg:w-1/2 px-6 py-5">
           <h3 className="text-black text-2xl font-medium mb-5 capitalize">
             A frontend developer

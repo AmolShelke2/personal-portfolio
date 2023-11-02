@@ -15,6 +15,20 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.349
+  ); /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Add rounded corners to the scrollbar thumb */
+}
+
 .heading {
   font-family: "Dancing Script", cursive;
 }
