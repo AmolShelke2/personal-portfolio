@@ -67,7 +67,7 @@ export const Header: React.FC = () => {
       <div
         className="block lg:hidden absolute right-4 top-5 cursor-pointer"
         onClick={() => setIsNavActive(!isNavActive)}>
-        <AiOutlineMenu size={25} />
+        <AiOutlineMenu size={25} className="cursor-pointer" />
       </div>
     </header>
   );
