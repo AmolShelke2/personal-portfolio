@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavItem } from "./re-usable/NavItem";
+import { navItems } from "@/data/navLinks";
 
 export const Header: React.FC = () => {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -31,36 +32,15 @@ export const Header: React.FC = () => {
           className={`${
             isNavActive ? "flex  transition-all duration-150" : "hidden"
           } lg:flex flex-col lg:flex-row justify-around w-full bg-slate-100 lg:bg-white`}>
-          <NavItem
-            link={"home"}
-            title={"Home"}
-            handleNav={setIsNavActive}
-            isActive={isNavActive}
-          />
-          <NavItem
-            link={"about"}
-            title={"About"}
-            handleNav={setIsNavActive}
-            isActive={isNavActive}
-          />
-          <NavItem
-            link={"projects"}
-            title={"Projects"}
-            handleNav={setIsNavActive}
-            isActive={isNavActive}
-          />
-          <NavItem
-            link={"blogs"}
-            title={"Blogs"}
-            handleNav={setIsNavActive}
-            isActive={isNavActive}
-          />
-          <NavItem
-            link={"contact"}
-            title={"Contact"}
-            handleNav={setIsNavActive}
-            isActive={isNavActive}
-          />
+          {navItems.map((navItem) => (
+            <NavItem
+              key={Math.random()}
+              link={navItem.link}
+              title={navItem.title}
+              handleNav={setIsNavActive}
+              isActive={isNavActive}
+            />
+          ))}
         </ul>
       </div>
 
